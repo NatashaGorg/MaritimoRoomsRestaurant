@@ -39,10 +39,7 @@ body {
 header {
   width: 90%;
   margin: 0 auto;
-  font-family: "Edu TAS Beginner", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500; /* Adjust as needed */
-  font-style: normal;
+ 
   color: #b0a5a5;
   text-align: center;
   padding: 1%;
@@ -150,10 +147,7 @@ main {
 h2 {
   margin-left: 2%;
   padding: 5% 2% 0% 1%;
-  font-family: "Edu TAS Beginner", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500; /* Adjust as needed */
-  font-style: normal;
+  
 }
 
 /* General Paragraph Styles */
