@@ -1,0 +1,73 @@
+
+.background-imageRestaurant{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/restaurant/Maritimo\ vani3.jpg"); /* Adjust the path to match the location of your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Adjust the opacity value as needed (0 to 1) */
+    z-index: -1; /* Ensure the background image is behind other content */
+}
+.about {
+  margin-left: 1%;
+  margin-bottom: 1%;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 900;
+}
+.restaurantGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  color: brown;
+  font-size: 1.4em;
+  margin-left: 1%;
+}
+
+
+.row {
+    display: flex;
+    
+    margin-left: 10%;
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    display: inline;
+    
+    flex: 25%;
+    width: 10%;
+   
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

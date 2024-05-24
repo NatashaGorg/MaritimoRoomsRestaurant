@@ -1,0 +1,261 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set background image */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/rooms/sukošan.jpg"); /* Adjust the path to match the location of your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Adjust the opacity value as needed (0 to 1) */
+  z-index: -1; /* Ensure the background image is behind other content */
+}
+
+/* Container for content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+/* Header Styles */
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500; /* Adjust as needed */
+  font-style: normal;
+  color: #b0a5a5;
+  text-align: center;
+  padding: 1%;
+  z-index: 1000;
+  transition: transform 0.2s ease-in;
+}
+
+h1 {
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 2, 1) 0%,
+    rgba(180, 59, 59, 1) 35%,
+    rgb(63, 5, 5) 100%
+  );
+  color: #030000;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  padding: 1%;
+  word-wrap: break-word;
+  transition: transform 0.2s ease-in;
+}
+
+h1:hover,
+nav:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Styles */
+nav {
+  width: 100%;
+  color: #884343;
+  font-size: 1.5rem;
+  padding: 0.15% 0.5%;
+  text-align: center;
+  transition: transform 0.2s ease-in;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #150303;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Welcome Section Styles */
+.welcome {
+  padding: 2%;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.welcome h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1%;
+}
+
+.welcome p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.welcome a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.welcome:hover {
+  color: #0056b3;
+}
+
+/* Apartments and Amenities Section Styles */
+.amenities {
+  margin-left: 2%;
+  list-style-type: disc; /* Use disc bullet points */
+  padding-left: 20px; /* Add padding to the left */
+  color: #000; /* Set text color to black */
+}
+
+.amenities li {
+  margin-bottom: 10px; /* Add space between items */
+  color: #000; /* Ensure the list items text is black */
+}
+
+/* Book Stay Section Styles */
+h2 {
+  margin-left: 2%;
+  padding: 5% 2% 0% 1%;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500; /* Adjust as needed */
+  font-style: normal;
+}
+
+/* General Paragraph Styles */
+p {
+  margin-bottom: 1%;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 900;
+}
+
+/* Form Styles */
+#contactForm {
+  max-width: 30%;
+  margin: 2% 2%;
+  padding: 1% 1% 1% 1%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 2, 1) 0%,
+    rgba(180, 59, 59, 1) 35%,
+    rgb(63, 5, 5) 100%
+  );
+  color: #0f0e0e;
+
+  text-align: center;
+  padding: 2%;
+  font-weight: 900;
+}
+
+.social-media .facebook a .fa-facebook {
+  margin-right: 30%;
+  float: right; /* Move it to the right side */
+  size: 10em;
+}
+.social-media .instagram a .fa-instagram {
+  margin-left: 30%;
+  margin-top: 1%;
+  float: left; /* Move it to the right side */
+}
+@media screen and (max-width: 768px) {
+  .welcome {
+    max-width: 90%;
+  }
+
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+  }
+}
+.social-media .facebook a .fa-facebook {
+  margin-right: 18%;
+  float: right; /* Move it to the right side */
+  font-size: 1.5em;
+  color: #0056b3;
+}
+.social-media .instagram a .fa-instagram {
+  margin-left: 12%;
+  margin-top: 1%;
+  float: left; /* Move it to the right side */
+}
