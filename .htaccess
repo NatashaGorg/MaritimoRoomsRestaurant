@@ -2,8 +2,8 @@
 RewriteEngine On
 
 # Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\.example\.com [NC]
-RewriteRule ^(.*)$ http://example.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.maritimoroomssukosan\.com [NC]
+RewriteRule ^(.*)$ http://maritimoroomssukosan.com/$1 [L,R=301]
 
 # Redirect HTTP to HTTPS (optional, if your site uses SSL)
 RewriteCond %{HTTPS} off
