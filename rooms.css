@@ -28,11 +28,11 @@ h2 {
     /* Horizontally center align items */
     align-items: center;
     /* Vertically center align items */
-    flex-wrap: wrap;
-    margin-top: 2%;
+
+
     font-size: 2em;
-    padding: 0 4px;
-    width: 100%;
+    
+    
     /* Ensure full width */
 }
 
@@ -71,6 +71,10 @@ h2 {
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {
+
+    .Gallery {
+        font-size: 1em;
+      }
     .column {
         flex: 50%;
         max-width: 50%;
